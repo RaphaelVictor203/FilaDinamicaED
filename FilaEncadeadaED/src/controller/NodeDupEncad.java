@@ -2,9 +2,9 @@ package controller;
 
 public class NodeDupEncad {
 	private char element; 
-	private Node next, previous; 
+	private NodeDupEncad next, previous; 
 	
-	public NodeDupEncad(char c, Node n, Node p){
+	public NodeDupEncad(char c, NodeDupEncad n, NodeDupEncad p){
 		element = c;
 		next = n;
 		previous = p;
@@ -18,11 +18,11 @@ public class NodeDupEncad {
 		return element; 
 	}
 	
-	public Node getNext(){ 
+	public NodeDupEncad getNext(){ 
 		return next; 
 	}
 	
-	public Node getPrevious() {
+	public NodeDupEncad getPrevious() {
 		return previous;
 	}
 	
@@ -30,11 +30,11 @@ public class NodeDupEncad {
 		element = newElem; 
 	}
 	
-	public void setNext(Node newNext){ 
+	public void setNext(NodeDupEncad newNext){ 
 		next = newNext; 
 	}
 	
-	public void setPrevious(Node newPrevious) {
+	public void setPrevious(NodeDupEncad newPrevious) {
 		previous = newPrevious;
 	}
 }
